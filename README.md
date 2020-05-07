@@ -10,7 +10,7 @@ python looper.py --loops 5 --template CE3-loop.template visor.gcode
 ```
 
 
-Also note that by default, marlin firmware will time out when bed cooling if the bed doesn't change temperature for 1 minute. You can override that by adding
+Also note that by default, marlin firmware will time out (and stop waiting) when bed cooling if the bed doesn't change temperature for 1 minute. You can override that by adding
 ```
 #define MIN_COOLING_SLOPE_TIME_BED 1200 // (seconds) Timeout if bed temperature can't be reached
 ```
